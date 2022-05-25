@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>SINEHAN: A MOVIE SCREENING EVENT</title>
+		<meta charset="utf-8">
+		<meta name="description" content="CS 4Q">
+	  	<meta name="keywords" content="html, forms, navigation, css, javascript">
+	  	<meta name="author" content="Xcye Xandre Madlangbayan, Micah Rianna Bautista, Hannah Angela Lorenzo">
+	  	<meta name="revised" content="05/18/2022">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link href="../css/style.css" rel="stylesheet" type="text/css"/> <!-- How we place the CSS stylings -->
+	</head>
+
+	<body>
+		
+		<section id="innerBorder">
+
+			  <form 
+			  id = "page2"
+			  action="third.html"
+			  method="post"
+			  autocomplete="off"> <!-- Page 2 has action to Page 3 (third.html) -->
+
+				  <h2 class="steps">Step 2 - Tickets, Movie, and Seating</h2>
+
+				  <p class="moreParagraphs">We know what you're here for!</p>
+
+				  <br>
+
+				  <p>
+
+					<label id="checkInvite">Would you like to invite others?</label> <!-- Immediate invite option before placing tickets -->
+
+					<input type="checkbox" id="invite">
+
+				  </p>
+
+				 <p>
+					<label>Number of Tickets</label>
+
+					<input type="number" id="tickets" name="tickets" min="1" max="3"> <!-- Enter # of tickets, minimum of 1, maximum of 3 -->
+
+				 </p>
+
+				  <p class="placeholder">(Schedule goes here)</p> <!-- TBA Schedule -->
+
+				  <p>
+
+				  <label>Movie of Choice:</label> <!-- Selection of Movie begins here -->
+				
+				  <select name="movies" id="movies">
+
+					<option value="sonic2">Sonic The Hedgehog 2</option>
+
+					<option value="bad_guys">The Bad Guys</option>
+
+					<option value="doctor_strange">Doctor Strange in the Multiverse of Madness</option>
+
+					<option value="top_gun">Top Gun Maverick</option>
+
+					<option value="nick_cage">The Unbearable Weight of Massive Talent</option>
+
+					<option value="bobs_burgers">The Bob's Burgers Movie</option>
+
+				</select>
+
+				  </p>
+
+				  <p>
+
+					<label>Where would like to sit? (Image provided eventually)</label> <!-- Seating Arrangement Reference TBA -->
+
+					<input type="text" name="seat" id="seat" required>
+
+				  </p>
+
+				  <button type="button" id="prevBtnPage2" class="prevButtons" onclick="prevButton2ndPage()">Previous</button> <!-- Prev button function -->
+				  <button type="button" id="nextBtn2" class="nextButtons" onclick="nextButton2ndPage()">Next</button> <!-- Next button function -->
+
+			</form>
+
+			<script src="../js/script.js"></script> <!-- How we place the JavaScript functions -->
+
+		</section>
+
+	</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>SINEHAN: A MOVIE SCREENING EVENT</title>
+		<meta charset="utf-8">
+		<meta name="description" content="CS 4Q">
+	  	<meta name="keywords" content="html, forms, navigation, css, javascript">
+	  	<meta name="author" content="Xcye Xandre Madlangbayan, Micah Rianna Bautista, Hannah Angela Lorenzo">
+	  	<meta name="revised" content="05/18/2022">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link href="css/style.css" rel="stylesheet" type="text/css"/> <!-- How we place the CSS stylings -->
+	</head>
+
+	<body>
+		
+		<section id="innerBorder">
+			
+			<section id="titleDiv">
+				<h1 class="title">SINEHAN: A MOVIE SCREENING EVENT </h1> <!-- Title -->
+				<h3 class="title">(Ticket Reservation Form For PSHS-MC Batch 2025)</h3> <!-- Subtitle -->
+			</section>
+
+			<p id="greeting">Why, hello there. This coming June, there will be a movie screening event during one of our school festivals. So, if you want to catch one of these movies, please fill this form. </p> <!-- Explaining the Occasion -->
+
+			<form 
+			  id = "page1"
+			  action="second.html"
+			  method="post"
+			  autocomplete="off"> <!-- Page 1 has action to Page 2 (second.html) -->
+
+				<h2 class="steps">Step 1 - Personal Information</h2>
+
+				<p class="moreParagraphs">Let's begin with a little introduction, like most movie protagonists will do. </p><br>
+
+				<p>
+					<label>Full Name</label> <!-- Collects the first and last name -->
+					
+					<input type="text" name="fname" id="fname" placeholder="First Name" required>
+					<input type="text" name="lname" id="lname" placeholder="Last Name" required>
+				</p>
+
+				<p>
+					<label>Section</label> <!-- Choose your section here -->
+
+					<select name="sections" id="sections">
+
+						<option value="beryllium">Beryllium</option>
+
+						<option value="cesium">Cesium</option>
+
+						<option value="lithium">Lithium</option>
+
+						<option value="magnesium">Magnesium</option>
+
+						<option value="potassium">Potassium</option>
+
+						<option value="rubidium">Rubidium</option>
+
+						<option value="sodium">Sodium</option>
+
+						<option value="strontium">Strontium</option>
+
+					</select>
+
+				</p>
+
+				<p>
+					<label>Age (Up to your most recent birthday)</label> <!-- Collects user's age, minimum of one -->
+					
+					<input type="number" id="age"  name="current_age" min="1">
+				</p>
+
+				<button type="button" id="nextBtn1" class="nextButtons" onclick="nextButton1stPage()">Next</button> <!-- Next button function -->
+
+			</form>
+
+			<script src="js/script.js"></script> <!-- How we place the JavaScript functions -->
+		
+		</section>
+		
+	</body>
+
+</html>

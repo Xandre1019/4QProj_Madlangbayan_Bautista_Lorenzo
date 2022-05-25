@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>SINEHAN: A MOVIE SCREENING EVENT</title>
+		<meta charset="utf-8">
+		<meta name="description" content="CS 4Q">
+	  	<meta name="keywords" content="html, forms, navigation, css, javascript">
+	  	<meta name="author" content="Xcye Xandre Madlangbayan, Micah Rianna Bautista, Hannah Angela Lorenzo">
+	  	<meta name="revised" content="05/18/2022">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link href="../css/style.css" rel="stylesheet" type="text/css"/> <!-- How we place the CSS stylings -->
+	</head>
+
+	<body>
+		
+		  <section id="innerBorder">
+
+			  <form 
+			  id = "page3"
+			  method="post"
+			  autocomplete="off"
+			  action="summary.html"
+			  onsubmit="return collectInputPage3()"> <!-- Page 3 has action to Summary Page (summary.html - TBA) -->
+
+				  <h2 class="steps" id="step3">Step 3 (Optional) - Movie Buddies</h2> <!-- Opens if invite was checked -->
+
+				  <p class="placeholder">Say you're seeing this with others</p>
+
+				  <p>
+
+					<label>Full list of your friend/s here:</label> <!-- Enter friend names here-->
+
+					<input type="text" name="friend1" id="friend1" placeholder="First Friend">
+					<input type="text" name="friend2" id="friend2" placeholder="Second Friend">
+
+				  </p>
+
+
+				  <p>
+
+				  <label>If it's one friend, where would you like them to sit? Left or right of you?</label>
+
+				  <select name="place" id="place"> <!-- Selection of placement if one friend was invited -->
+
+					  <option value="left">Left</option>
+
+					  <option value="right">Right</option>
+				
+				  </select>
+
+				  </p>
+
+
+				  <button type="button" id="prevBtnPage3" class="prevButtons" onclick="prevButton3rdPage()">Previous</button> <!-- Prev button function -->
+				  <input type="submit" id="submit"> <!-- Submit button -->
+				  <input type="reset" id="reset"> <!-- Reset button -->
+
+			</form>
+
+			<script src="../js/script.js"></script> <!-- How we place the JavaScript functions -->
+
+		</section>
+
+	</body>
+
+</html>
